@@ -1,0 +1,432 @@
+/* Component Needs */
+
+
+
+.pc-tab>input,
+
+.pc-tab section>div {
+
+    display: none;
+
+}
+
+#tab1, #tab2, #tab3, #tab4{
+    display: inline-block;
+}
+
+#tab1:checked~section .tab1,
+
+#tab2:checked~section .tab2,
+
+#tab3:checked~section .tab3,
+
+#tab4:checked~section .tab4 {
+
+    display: block;
+
+}
+
+html {
+    font-family: sans-serif;
+}
+
+*,
+
+*:after,
+
+*:before {
+
+    -webkit-box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    -webkit-font-smoothing: antialiased;
+
+  
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    font-weight: 100;
+
+    font-size: 60px;
+
+    color:black;
+    
+
+}
+
+.first {
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+
+.pc-tab {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+
+.pc-tab ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+}
+
+
+
+.pc-tab label.navigation {
+
+    display: block;
+
+    padding: 15px;
+
+    border-bottom: 0;
+
+    cursor : pointer;
+
+    border: 1px solid #000;
+
+}
+
+
+
+input {
+
+    margin: 10px 0px 10px 0px;
+
+    padding: 2px;
+
+    display: block;
+
+}
+
+
+
+#tab1:checked ~ nav .tab1 label,
+
+#tab2:checked ~ nav .tab2 label ,
+
+#tab3:checked ~ nav .tab3 label , 
+
+#tab4:checked ~ nav .tab4 label {
+
+    background: #fff;
+
+    position: relative;
+
+}
+
+
+
+#tab1:checked ~ nav .tab1 label:after,
+
+#tab2:checked ~ nav .tab2 label:after,
+
+#tab3:checked ~ nav .tab3 label:after,
+
+#tab4:checked ~ nav .tab4 label:after {
+
+    content: '';
+
+    display: block;
+
+    position: absolute;
+
+    height: 2px;
+
+    width: 100%;
+
+    background: #fff;
+
+    left: 0;
+
+    bottom: -1px;
+
+}
+
+
+
+section div {
+
+    padding: 20px;
+
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+}
+
+
+
+section div h2 {
+
+    margin: 0;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+button {
+
+    background: none;
+
+    border: 1px solid #000;
+
+    border-radius: 2px;
+
+}
+
+
+    
+ .first-button {
+        margin: 0 auto;
+}
+
+#label3,#label2,#label3, 
+#label4, #label5,#label6,
+#label7,#submit {
+    background-color:gray;
+    width: 150px;
+    font-size: 20px;
+    height: 50px;
+}
+
+.next-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-head {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+li {
+    margin: 10px;
+    padding:10px;
+}
+
+.navigation {
+    color: black;
+    height: 130px;
+   
+    text-align: center;
+}
+
+
+textarea {
+    font: 1em sans-serif;
+    width: 90%;
+    box-sizing: border-box;
+    height: 5%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+   
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .con {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+  
+}
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .billing-add {
+    display: block;
+ }
+ 
+.container input:checked ~ .billing-add {
+    display: none;
+}
+
+.break {
+    border: none;
+}
+  
+
+img {
+    width: 150px;
+    height: 150px;
+ }
+
+.cloth-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-cont {
+    display: flex;
+
+}
+
+.tab1,.tab2,.tab3,.tab4 {
+    box-shadow: 3px 3px 3px 3px grey;
+}
+
+.progress {
+    width: 160px;
+    background-color: #f05050;
+}
+
+.progress2 {
+    width: 300px;
+    background-color:#f05050;
+    
+}
+
+.progress3 {
+    width: 95%;
+    background-color:#f05050;
+}
+
+.progress4 {
+    width: 650px;
+    background-color:#f05050;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+   h1 {
+       font-size: 30px;
+
+   }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pc-tab ul {
+
+       flex-direction: column;
+
+    }
+
+    .pc-tab li {
+
+        width: 100%;
+
+     }
+
+
+    label:after {
+
+        height : 0px !important;
+
+    }
+    .img-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress4, #country {
+        width: 100%;
+    }
+
+  }
