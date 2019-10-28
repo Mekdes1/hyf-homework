@@ -1,0 +1,253 @@
+
+ * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    
+ }
+
+  html {
+
+    font-family: sans-serif;
+    
+  }
+
+  body {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dotted gray;
+    
+   }
+
+
+/*** header start ***/
+
+   header {
+
+        height: 150px;
+        background-color: #f5f8f0;
+        border: 1px solid #dbcfcf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+    }
+
+    
+   .title {
+        margin-left: 100px;
+        padding: 5px;
+    }
+
+
+   .subtitle {
+        color: gray;
+    }
+
+
+    /*** end header ***/ 
+
+   
+    .menu-nav {
+   
+        display: flex;
+        height: 60px;
+        list-style: none;
+        align-items: center;
+        margin-left: 100px;
+       
+    }
+
+     .list-menu {
+          
+          margin-left: 20px;
+          font-weight: bold;
+        
+     }
+
+        .about {
+            color: gray;
+        }
+
+    
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    
+        
+     /*** end nav ***/
+
+     
+     img {
+
+        margin-right:0;
+        width: 1200px;
+        height: 400px;
+         
+     }
+
+     /***article start***/
+
+        .details1,.details2 {
+            margin:10px;
+            padding:10px;
+            width: 500px;
+    }
+
+        .phar {
+            margin-top: 20px;
+            color: gray;
+    }
+    
+        .details2  {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+        article {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+/****article end****/
+
+    .gallery-article,.logo-type {
+        margin: 10px;
+        padding: 10px;
+        
+
+    }
+    .img-logo {
+        width: 120px;
+        height: 120px;
+        
+        /***margin-top: 5px;
+        margin-left: 5px; ***/
+        padding: 4px;
+        margin: 4px;
+    
+    }
+    
+    section {
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .logo-type {
+       max-width: 500px;
+       margin-bottom: 10px;
+    }
+    
+        
+
+
+    .img-logo1 {
+       /*** border:1px solid red; ***/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+    }
+
+    .gallery-article {
+        margin-left: 25px;
+    }
+
+
+    /***end section ***/
+    
+    footer {
+        width: 1200px;
+        height: 400px;
+        background-color: rgb(162, 44, 247);
+    }
+
+    .maps {
+        width:160px;
+        height: 160px;
+        margin-top: 15px;
+    }
+     
+    
+
+    
+    .footer-nav {
+        list-style: none;
+        
+    }
+
+    .page-footer, .about-page, .archives, .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        font-weight: bold;
+        color: white;
+        line-height: 30px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .containt-footer-nav {
+        margin-top: 25px;
+        
+    }
+
+    .footer-list {
+        color:white;
+    }
+
+    /*** end footer***/
+
+    @media screen and (max-width:600px) {
+        header,img, article,.logo-type, section, footer{
+            width: 100%;
+        }
+        .menu-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100px;
+        
+        }
+        footer {
+
+            display: flex;
+            flex-direction: column;
+            height: 1000px;
+            justify-content: center;
+            align-items: flex-start;
+            
+        }
+    
+            
+    
+
+        article, section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .details1,.details2 {
+            max-width: 300px;
+        }
+
+        .img-logo1 {
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .page-footer,.about-page,.archives,.navigation {
+            margin-left: 20px;
+        }
+    
+    }

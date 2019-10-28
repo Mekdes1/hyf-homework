@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active{
+  background-color: green;
+}
+
+
+/***menubar end***/
+
+#container {
+  width:60%;
+  margin:0 auto;
+  /**** border: 3px solid pink; ****/
+  /*** border-radius: 25px; ***/
+  /**** background-color: pink; ****/
+}
+
+ body{
+    font-family: sans-serif;
+ }
+h1 {
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+img {
+  width: 15%;
+  float:left;
+  margin-top: 12px;
+  margin-right: 12px;
+  }
+
+  .personal-info {
+    margin-top: 18px;
+    padding-left: 12px;
+    font-size: 20px;
+  }
+
+
+.title-1 {
+  margin-top: 12px;
+  /****border-top: 3px solid pink;****/
+  margin-bottom: 8px;
+  padding-top: 12px;
+  color:blue;
+}
+
+.the-first-u {
+  margin-right: 12px;
+  float: left;
+}
+
+.title-2 {
+  margin-top: 20px;
+  color: blue;
+}
+
+.details-1 {
+  margin-left: 145px;
+}
+
+ul.details-1 {
+  margin-top: 15px;
+}
+
+.details-2 {
+  margin-left: 130px;
+  padding-top: 12px;
+}
+.note {
+  margin-top: 15px;
+}
+
+.work-ex{
+  padding-top: 30px;
+/***  border: 1px solid red; /****** for show case ****/
+}
+
+#special {
+  margin-top: 150px;
+  border-top: 3px solid blue;
+
+}
+hr {
+  border: 2px solid blue;
+  margin-top:14px;
+}
+
+.learning-stratagies {
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.stratagies {
+  margin-top: 15px;
+  margin-left: 135px;
+  font-style: italic;
+  font-weight: bold;
+
+
+}
+
+.tips {
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+
+footer {
+  margin-top: 60px;
+  background-color: blue;
+  color : white;
+  text-align: center;
+  padding-top: 6px;
+  position: relative;
+  clear: both;
+
+}
