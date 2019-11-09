@@ -26,12 +26,11 @@ if (shouldShowResultInDogYears) {
 
 let VolumeInMeters = 8 * 10 * 10;
 let gardenSizeInM2 = 100;
-let peterCost = 2500000;
 let housePrice =  VolumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 
-if ( peterCost > housePrice) {
-    console .log (" Peter you are paying too much, you are paying " + (peterCost - housePrice) + " times more than the actuall price!!! ");
-}  else if( peterCost == housePrice) {
+if ( housePrice < 2500000) {
+    console .log (" Peter you are paying too much, you are paying " + (2500000 - housePrice) + " times more than the actuall price!!! ");
+}  else if( 2500000 == housePrice) {
     console .log( "well done!")
 } else { 
     console .log (" you are paying too little.");
@@ -41,15 +40,14 @@ if ( peterCost > housePrice) {
 
 let housVolumeInMeters = 5 * 11 * 8;
 let housGardenSizeInM2 =70;
-let juliaCost = 1000000;
 let houseOfPrice = housVolumeInMeters * 2.5 * 1000 + housGardenSizeInM2 * 300;
 
-if ( juliaCost > houseOfPrice) {
+if ( houseOfPrice < 1000000) {
     console .log (" Julia you are paying too much ");
-} else if( juliaCost == houseOfPrice) {
+} else if( 1000000 == houseOfPrice) {
     console .log( "well done!")
 } else { 
-    console .log (" you are paying too little." + " you are paying " + (houseOfPrice - juliaCost) + " times less!!! ");
+    console .log (" you are paying too little." + " you are paying " + (houseOfPrice - 1000000) + " times less!!! ");
 }
 
 // Ez Namey (Startup name generator) Optional
