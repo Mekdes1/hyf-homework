@@ -16,7 +16,7 @@ function addCandy(candyType,weight)
     return boughtCandyPrice
 }
 addCandy(Sweet,80);
-console .log(`${boughtCandyPrice}`);
+console .log(boughtCandyPrice);
 
 
 function canBuyMoreCandy() 
