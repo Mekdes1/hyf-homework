@@ -39,6 +39,4 @@ shouldBuyCandy = 0;
     return false
 
 }
-
-
 canBuyMoreCandy();
