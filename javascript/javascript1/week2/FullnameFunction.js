@@ -1,7 +1,7 @@
 /* Flight booking fullname function */                        
 
  function getFullname(firstname,surename,useFormalName) {
- if (useFormalName == true) {
+ if (useFormalName) {
 
     let displayFormalName = "Lord "+ " " + firstname + " " + surename 
     return displayFormalName;
@@ -17,4 +17,4 @@ const fullname2 = "Habtamu";
 useFormalName = true;
 
 const fullname = getFullname(fullname1,fullname2,true);
-console .log(`${fullname}`); 
+console .log(fullname); 
