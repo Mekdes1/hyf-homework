@@ -1,7 +1,7 @@
 /* Weather wear */
 
 let recommandation;
-function wetherWere(temprature){
+function weatherWear(temprature){
      if(temprature <= 6) {
         recommandation = "its very cold. go for winter cloth";
         return recommandation
@@ -13,11 +13,11 @@ function wetherWere(temprature){
  (temprature >18 && temprature <27 ) {
      recommandation = "it is getting warm put some light cloth on";
 
-} else if 
-(temprature > 27) {
+} else
+
     recommandation = "it is very warm out there";
 
 }
-    }
-wetherWere (25);
-console .log(`${recommandation}`);
+
+weatherWear(25);
+console .log(recommandation);
