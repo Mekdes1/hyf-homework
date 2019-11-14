@@ -1,89 +1,101 @@
-/* Student manager */
-let class07Students = [];
+// Student manager
+const class07Students = [];
 
-function addStudentToClass(studentName)
+function addStudentToClass(studentName) {
 
-{
+    if(getNumberOfStudents(class07Students)<6){
 
-if (class07Students .length < 6) 
+        if(studentName == " "){
 
-{
-     
-   class07Students .push(studentName)
-   return class07Students 
-} 
+            outPutString = "student name can not be empty!" + "please enter a valid name";
+
+            return outPutString;
+
+        }else{
+
+            for(let i=0;i< getNumberOfStudents(class07Students);i++){
+
+                if(studentName == class07Students[i]){
+
+                    let outPutString =  studentName + " is already in the class "
+
+                    return outPutString;
+
+                }
+
+            }        
+
+        }        
+
+    }else if(studentName == "Queen"){
+
+            console.log("she can be aded because she is " + studentName)
 
 
-else if (class07Students .length >=6  && studentName !="Queen") {
-    class07Students = "Cannot add more students to class 07";
-    return class07Students
- } 
- 
- 
- else if (class07Students .length >=6  && studentName ==="Queen")
- 
- {
- 
-    class07Students .push(studentName)
-    return class07Students 
- } 
+            }else{
 
-else if(class07Students .length < 6) 
+            outPutString= "Cannot add more students to class 07";
 
-{
+            return outPutString;
 
-for(let i=0; i<=class07Students .length ;i++)
+        }
 
- {
+    class07Students.push(studentName);           
 
-    if(studentName === class07Students[i])
-    
-    {
-
-       class07Students = "Student is already in the class";
-       return class07Students
-     } 
-     
-     else 
-     
-     {
-
-        class07Students.push(studentName);
-
-        return class07Students
-        
-      }
-  }
-}
+    return "Sucessfully added!";
 
 }
 
+//returns the number of students in the class07Students array
 
-addStudentToClass ("Mekdes");
-console .log(`${class07Students}`); 
+function getNumberOfStudents(class07Students) {
 
+    const arrayLength = class07Students.length;
 
-let studentsInClass;
+    return arrayLength;
 
-function getNumberOfStudents() 
-{
-    if (class07Students === null) 
-    
-    {
-       studentsInClass = "is none because Class should not be empty";
-        return studentsInClass
-    
-    }  else
-    
-    (studentsInClass= class07Students.length);
-    
-    {
-    return studentsInClass
-    }
 }
-getNumberOfStudents();
-console .log(`The number of students in the class is : ${studentsInClass}`);
 
 
 
+// this function shows who is currently added in class07 
+
+function showListsInClass(studentName){
+
+    for(let i=0;i<studentName.length;i++){
+
+        console.log(studentName[i]);
+
+        console.log(addStudentToClass(studentName[i]));
+
+    }    
+
+    return;
+
+}
+
+
+
+//here is the test to all conditions
+
+let name= ['Mekdes','Habamu','BenJamin',' ','Swapna','Swapna','Christofer','chris','Enku','Queen']
+
+showListsInClass(name);
+
+console.log('Number of Students: ' + getNumberOfStudents(class07Students));
+
+
+function showStudentNameList(studentName){
+
+    for(let i=0;i<studentName.length;i++)
+
+    console.log(studentName[i]);
+
+    return;
+
+}
+
+console.log('The list of students name in the class07:');
+
+showStudentNameList(class07Students);
 
