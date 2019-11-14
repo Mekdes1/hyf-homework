@@ -12,7 +12,7 @@ function getEventWeekDay (eventDay) {
 }
 
 getEventWeekDay (2)
-console .log (`the event will be on:  ${nextEventweekDay}`);
+console .log (`The event will be on:  ${nextEventweekDay}`);
 
 
 
