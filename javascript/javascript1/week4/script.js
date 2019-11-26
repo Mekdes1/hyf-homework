@@ -27,7 +27,7 @@ function getReply(command) {
         
         return
 
-    }                        // this will do to do simple math
+    }                        // this will do simple math
         
     
     let splitCommand = command.split(" ");
