@@ -53,7 +53,7 @@ const serchedSong = [];
 function  getSongByTitle(title){
 
     for (let i=0 ; i< songDatabase.length; i++){
-        if (title == songDatabase[i].title) {
+        if (title === songDatabase[i].title) {
            serchedSong.push(songDatabase[i]);
            
      } 
@@ -74,7 +74,7 @@ console.log(serchedSong);
 function addSongToMyPlaylist(title) {
  
   for (let i= 0; i<serchedSong.length; i++){
-    if(title == serchedSong[i].title){
+    if(title === serchedSong[i].title){
       myPlaylist.push(serchedSong[i]);
     } 
   
