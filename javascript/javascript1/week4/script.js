@@ -32,12 +32,9 @@ function getReply(command) {
     
     let splitCommand = command.split(" ");
     let logOut = splitCommand[splitCommand.length-1]; 
-    let forSplit = text.concat(splitCommand[1], text ,splitCommand[2],text, splitCommand[3], text,splitCommand[4]); 
+   
     
     
-
-    
-
 for (let i=0; i<myName.length ; i++){
 
     if (logOut === myName[i]){
@@ -51,9 +48,7 @@ for (let i=0; i<myName.length ; i++){
 
 
 
-
-
-if (command ===forDateQuestion ) {
+if (command === forDateQuestion ) {
 
     let monthsOfTheYear = ["January","February","March","April","May","June","July","August", "September","October","November", "December"];
     
@@ -83,22 +78,9 @@ else if
         
       
 
-
 else if 
 
-        (splitCommand.length === 8 && command.startsWith("Remove") && command.endsWith("todo")){
-
-        
-       console.log(`${forSplit} removed from your todo`); 
-          
-         return todo.splice(todo.indexOf(forSplit[0]),1);
-
-
-        }                         // this will remove the item you want to remove from your to do and tells you what you have removed
-
-else if 
-
-   (splitCommand.length === 5 && command.startsWith("Remove") && command.endsWith("todo")){
+   (command.startsWith("Remove") && command.endsWith("todo")){
 
          let remove = splitCommand.splice(1,1);
         
@@ -194,33 +176,12 @@ else if
 
 
 
-else if 
-
-      (command.startsWith("Add") && command.endsWith("calander") && splitCommand.length === 8) {
-       
-        let activite1 = text.concat(splitCommand[1],text,splitCommand[2]);
-        let date1 = splitCommand[4];
-        
-        let dateObject = new Date(Date.parse(date1));
-
-         date1 = dateObject.toDateString();
-
-
-
-        console.log(`${activite1} added to your calander`);
-
-        return weekActivities.push({name: activite1, Date: date1});
-
-      }                                     // this will store your events for the week as an object with keys name ad Date 
-
-
-
 
 
 
 else if 
     
-         (command.startsWith("Add") && command.endsWith("calander") && splitCommand.length === 7) {
+         (command.startsWith("Add") && command.endsWith("calander")) {
           
           let activite = splitCommand[1];
           let date = splitCommand[3];
@@ -234,7 +195,7 @@ else if
     
     return weekActivities.push({name: activite, Date:date });
 
-}                     //  this will store your events for the week as an object with keys name ad Date 
+}                     //  this will store your events for the week as an object with keys name and Date 
 
 
 
@@ -267,25 +228,9 @@ else if
         }                    // this saves your favorite dish
 
 
-
-
-
-else  if 
-
-
-     (splitCommand.length === 8 && command.startsWith("Add") && command.endsWith("todo")){
-
-
-     console.log(`${splitCommand[1]} ${splitCommand[2]} ${splitCommand[3]} ${splitCommand[4]} added to your todo`);
-     return  todo.push(forSplit);
-
-}                                      // this will add your todo items in your todo list and logs what you added 
-                                     
-
-
 else if 
 
-      (splitCommand.length === 5 && command.startsWith("Add") && command.endsWith("todo")){
+      (command.startsWith("Add") && command.endsWith("todo")){
     
       console.log (`${splitCommand[1]} added to your todo`);
       return todo.push(splitCommand[1]);
@@ -352,10 +297,8 @@ getReply("Hello my name is Mekdes");
 getReply("Add swiming to my todo");
 getReply("Add dancing to my todo");
 getReply("What is my name");
-getReply("Add singing in the shower to my todo");
 getReply("Add jumping to my todo");
 getReply("Remove swiming from my todo");
-getReply("Remove singing in the shower from my todo");
 getReply("What is on my todo?");
 getReply("What day is it today");
 getReply("Hello my name is Enku");
@@ -368,7 +311,6 @@ getReply(10*10);
 getReply("My favorite dish is lasagna");
 getReply("What is my favorite dish");
 getReply("Add karaoke the 3/5/2019 to my calander");
-getReply("Add bick riding the 3/5/2019 to my calander");
 getReply("What am I doing this week?");
 getReply("Set timer for 2 second");
 getReply("Set timer for 1 minute");

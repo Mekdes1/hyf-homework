@@ -21,7 +21,7 @@ number= typeof(1);
 let log;
 function getNoteFromId(Id) {
   for(i=0; i<notes.length; i++){
-    if (Id==notes[i].Id){
+    if (Id===notes[i].Id){
       log = notes[i];
       return log
     } else if(!Id || typeof(Id)!== number){
