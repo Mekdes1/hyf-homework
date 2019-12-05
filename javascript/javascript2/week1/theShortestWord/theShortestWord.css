@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+#container{
+
+    margin: 0 auto;
+    width: 40%;
+    height: 500px;
+    background-color: powderblue;
+    border: 2px solid red;
+    text-align: center;
+}
+
+#firstPhar,#nameArray,#secondPhar,#answer {
+
+    margin: 5px;
+    font-size: 18px;
+    color: purple;
+    font-family: sans-serif;
+}
+
+
