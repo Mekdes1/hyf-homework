@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+#container{
+
+    margin: 0 auto;
+    width: 75%;
+    height: 500px;
+    background-color: powderblue;
+    border: 2px solid red;
+    text-align: center;
+}
+
+   #housepriceArray,#answer {
+
+    margin: 15px;
+    font-size: 18px;
+    color: purple;
+    font-family: sans-serif;
+}  
+
+
+

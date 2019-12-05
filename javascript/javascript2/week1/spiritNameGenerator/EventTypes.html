@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+    <title>Spirit animal name generator with select </title>
+</head>
+
+<body>
+    <div class="head1">
+      <h1> Spirit Animal Name Generator with select</h1>
+    </div>
+    
+    <div class="form">
+        
+     <label for="newUserName" > Name : </label>
+     <input type="text" id="User-name" name="username" placeholder="Type your name"> 
+     
+    
+    </div>
+
+
+   <label for="select" class="select-option">Choose when you want to recive your Spirit name:</label>
+   <select name="Choice" required id="select-event" class="selectEvent">
+
+        <option value="none">-------------select-----------------</option>
+
+        <option value="mouseout">on mouse out of the input filed</option>
+
+        <option value="doubleClick">on double click</option>
+
+        <option value="hoverOnInput">on hover on the input </option>                          
+
+    </select>   
+       
+
+
+<button id="generator-button"> Click to get your sprit animal name</button>
+
+    
+<div id="showName"></div>
+
+<script src="eventTypes.js"></script>
+
+</body>
+</html>

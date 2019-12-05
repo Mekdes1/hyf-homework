@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    width: 60%;
+    height: 500px;
+    border: 2px solid blue;
+    font-family: sans-serif;
+}
+
+#clickButton,#clickButton2,.form,#generator-button {
+margin: 10px;
+padding: 20px;
+}
+
+.head1 {
+    background-color: brown;
+   padding: 10px;
+    height: 80px;
+   
+}
+
+h1 {
+    color: burlywood;
+   
+}
+
+#newSpiritName,#newSpiritName2,#showName {
+    background-color:slategrey ;
+    height: 50px;
+    margin: 25px;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.select-option{
+    margin-left: 10px;
+}
+
+.selectEvent,#User-name {
+    height: 30px;
+}
+
+#showName {
+    height: 100px;
+}
