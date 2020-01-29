@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -21,4 +22,29 @@ height: 55%;
 width: 80%;
 margin-left: 20px;
 border: 1px red solid;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    border: 2px blue solid;
+
+}
+#button1,#buttonLog {
+    height: 50px;
+}
+
+#map{
+margin-top: 10px;
+height: 55%;
+width: 80%;
+margin-left: 20px;
+border: 1px red solid;
+
 }
