@@ -2,16 +2,16 @@
 
 const gifButton = document.getElementById("button1");
 
-const yourSearh = document.getElementById("gifSearch");
+const yourSearch = document.getElementById("gifSearch");
 
 const showGif = document.getElementById("number");
 
 const image = document.getElementById("img");
 
-const searh = () => {
+const search = () => {
   const key = "xj7oXM8sQY98cMeuuWPPBI3zecV6wNYo";
   const inputSearch = yourSearh.value;
-  let howMany = showGif.value;
+  const howMany = showGif.value;
 
   fetch(
     `https://api.giphy.com/v1/gifs/search?api_key=${key}&limit=${howMany}&offset=0&rating=G&lang=en&q=${inputSearch}`
@@ -38,7 +38,7 @@ const forSearch = () => {
   if (yourSearh.value == "") {
     image.innerText = "please insert value";
   } else {
-    searh();
+    search();
   }
 };
 
