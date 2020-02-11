@@ -7,11 +7,11 @@ FROM task
 WHERE due_date IS NULL;
 -- Find all the tasks that are marked as done
 SELECT task.*, status.name
-FROM task INNER JOIN status ON task.user_id = status.id
+FROM task INNER JOIN status ON task.status_id = status.id
 WHERE status.name = 'Done';
 -- Find all the tasks that are not marked as done
 SELECT task.*,status.name
-FROM task INNER JOIN status ON task.user_id = status.id
+FROM task INNER JOIN status ON task.status_id = status.id
 WHERE NOT status.name = 'Done';
 -- Get all the tasks, sorted with the most recently created first
 SELECT *
