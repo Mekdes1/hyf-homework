@@ -2,14 +2,8 @@ const express = require("express");
 const router = express();
 
 const meals = require("../data/meals.json");
-const review = require("../data/reviews.json");
 
-const cheapMeal = meals.filter(itemMeal => {
-  if (itemMeal.price < 70) {
-    return true;
-  }
-});
-
+const cheapMeal = meals.filter(itemMeal => itemMeal.price < 70);
 
 router.get("/cheap-meals", (request, response) => {
   response.json(cheapMeal);

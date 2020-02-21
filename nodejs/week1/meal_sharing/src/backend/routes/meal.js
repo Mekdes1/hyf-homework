@@ -2,16 +2,12 @@ const express = require("express");
 const router = express();
 
 const meals = require("../data/meals.json");
-const review = require("../data/reviews.json");
+const reviews = require("../data/reviews.json");
 
-  meals.forEach(mealItem => {
-  mealItem.review = [];
-  
-  review.forEach(reviewItem => {
-    if (reviewItem.mealId === mealItem.id) {
-      mealItem.review.push(reviewItem);
-    }
-  });
+meals.forEach(mealItem => {
+  mealItem.review = reviews.map(
+    reviewItem => reviewItem.mealId === mealItem.id
+  );
 });
 
 router.get("/meal", (request, response) => {
