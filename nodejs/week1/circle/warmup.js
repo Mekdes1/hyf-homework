@@ -11,14 +11,14 @@ class circle {
     return diameter;
   }
 
-  getCircmference() {
-    const circmference = (Math.PI * this.radius * 2).toFixed(2);
-    console.log(`Circmference : ${circmference}`);
-    return circmference;
+  getCircumference() {
+    const circumference = (Math.PI * this.radius * 2).toFixed(2);
+    console.log(`Circumference : ${circumference}`);
+    return circumference;
   }
   getArea() {
     const radiusIs = this.radius;
-    const area = radiusIs * radiusIs;
+    const area = Math.PI * (radiusIs * radiusIs);
     console.log(`Area : ${area}`);
     return area;
   }
@@ -26,5 +26,5 @@ class circle {
 
 const circleIs = new circle(10);
 circleIs.getDiameter();
-circleIs.getCircmference();
+circleIs.getCircumference();
 circleIs.getArea();
