@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "createdBy" : "Yeshi",
+      "title" : "food review",
+      "numberOfStars": 3,
+      "content": "Best meal ever",
+      "mealId": 1,
+      "createdAt": 12345
+    },
+    
+    {
+      "id": 2,
+      "createdBy" : "Habtamu",
+      "title" : "food review",
+      "numberOfStars": 3,
+      "content": "good meal",
+      "mealId": 2,
+      "createdAt": 12345
+    },
+
+    {
+      "id": 3,
+      "title" : "food review",
+      "createdBy" : "Enku",
+      "numberOfStars": 4,
+      "content": "Best meal ever",
+      "mealId": 3,
+      "createdAt": 12345
+    },
+
+    {
+      "id": 4,
+      "title" : "food review",
+      "createdBy" : "Mekdes",
+      "numberOfStars": 4,
+      "content": "great meal ",
+      "mealId": 4,
+      "createdAt": 12345
+    }
+  ]

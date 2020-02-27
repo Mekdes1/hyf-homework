@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Benjamin Hughes",
+      "email": "benjamin@hughes.dk",
+      "mealId": 1
+    },
+    
+    {
+      "id": 2,
+      "name": "Mekdes Habatmu",
+      "email": "yesmek88@yahoo.com",
+      "mealId": 2
+    },
+
+    {
+      "id": 3,
+      "name": "Enku Habtamu",
+      "email": "enku@yahoo.com",
+      "mealId": 3
+    },
+
+    {
+      "id": 4,
+      "name": "Habtamu Ahmed",
+      "email": "habtamu@yahoo.com",
+      "mealId": 4
+    }
+
+
+
+
+  ]
