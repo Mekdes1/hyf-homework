@@ -9,7 +9,6 @@ router.post("/", (request, response) => {
     description: "made with chicken",
     location: "Lyngbygårdsvej, 2800 Kgs.Lyngby",
     when: "2020-02-06 23:00:00",
-    max_reservataion: 8,
     price: 250,
     created_date: "2020-03-05 23:00:00"
   };
@@ -119,7 +118,7 @@ router.get("/", (request, response) => {
         if (error) {
           throw error;
         }
-        response.send("working");
+        response.send(results);
       }
     );
   } else if (limit) {
