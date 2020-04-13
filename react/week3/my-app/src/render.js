@@ -30,7 +30,6 @@ function TodoItem(props) {
   );
 }
 
-
 class TodoList extends React.Component {
   state = {
     listOfTodos: [],
@@ -57,8 +56,13 @@ class TodoList extends React.Component {
   }
 
   addNewTodo(todoName, deadlineDate) {
+    const currentDate = new Date();
+    const selectedDate = new Date(deadlineDate);
+
     if (todoName === "" || deadlineDate === "") {
       alert("Input can not be empty");
+    } else if (selectedDate < currentDate) {
+      alert("please make sure your deadline date is correct");
     } else {
       this.setState({
         listOfTodos: [
