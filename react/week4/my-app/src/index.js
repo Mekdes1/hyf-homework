@@ -7,23 +7,19 @@ import context from "./context";
 const ContextProvider = context.Provider;
 
 class App extends React.Component {
-  state = { userName: "", usersList: [], isLoading: false };
+  state = { usersList: [], isLoading: false };
   handelUserSearch = this.handelUserSearch.bind(this);
 
   handelUserSearch(e) {
     const value = e.target.value;
-    this.setState({ userName: value });
-
     const URL = `https://api.github.com/search/users?q=${value}`;
     fetch(URL)
       .then((data) => data.json())
       .then((response) => {
         const items = response.items;
-
+        console.log(items);
         this.setState({
-          usersList: items.map((item) => {
-            return item;
-          }),
+          usersList: items,
           isLoading: true,
         });
       })

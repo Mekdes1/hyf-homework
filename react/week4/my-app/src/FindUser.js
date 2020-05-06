@@ -3,16 +3,13 @@ import context from "./context";
 export default function FindUser() {
   const { handelUserSearch } = React.useContext(context);
   const form = (
-    <form>
-      {" "}
-      <input
-        type="text"
-        id="userName"
-        placeholder="search for user"
-        onChange={handelUserSearch}
-      />
-    </form>
+    <input
+      type="text"
+      id="userName"
+      placeholder="search for user"
+      onChange={handelUserSearch}
+    />
   );
 
-  return <React.Fragment>{form}</React.Fragment>;
+  return <div>{form}</div>;
 }
