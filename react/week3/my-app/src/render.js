@@ -2,6 +2,7 @@ import React from "react";
 
 function TodoItem(props) {
   const editstate = props.todos.editstate;
+
   const details = editstate ? (
     <input
       type="text"
@@ -15,6 +16,7 @@ function TodoItem(props) {
   ) : (
     ` ${props.todos.description}  ||  ${props.todos.deadline}`
   );
+
   const isComplete = props.todos.completed;
   return (
     <ul
@@ -24,8 +26,12 @@ function TodoItem(props) {
       <li> {details} </li>
       <input type="checkbox" onChange={props.handelCheckbox}></input>
       <button onClick={props.deleteTodo}> Delete</button>
-      <button onClick={props.editTodo}>Edit </button>
-      <button onClick={props.updateTodo}> update </button>
+      <input
+        type="button"
+        value={editstate ? "update" : "edit"}
+        /*<button onClick={props.updateTodo}> update </button>*/
+        onClick={props.updateTodo}
+      />
     </ul>
   );
 }
@@ -82,28 +88,30 @@ class TodoList extends React.Component {
     this.setState({ updateInput: updateValue });
   }
 
+  try = () => {
+    console.log("hello");
+  };
+
   update(id) {
-    if (this.state.updateInput === "") {
-      alert("Input is empty");
-    } else {
-      this.setState({
-        listOfTodos: this.state.listOfTodos.map((task, index) => {
-          if (id === index) {
-            return {
-              ...task,
-              description: this.state.updateInput,
-              editstate: !task.editstate,
-            };
-          } else {
-            return task;
-          }
-        }),
-      });
-    }
+    this.setState({
+      listOfTodos: this.state.listOfTodos.map((task, index) => {
+        if (id === index) {
+          console.log(task);
+          return {
+            ...task,
+            description: this.state.updateInput,
+            editstate: !task.editstate,
+          };
+        } else {
+          return task;
+        }
+      }),
+    });
   }
   editTodo(id) {
     this.setState({
       listOfTodos: this.state.listOfTodos.map((task, index) => {
+        console.log(task);
         if (id === index) {
           return { ...task, editstate: !task.editstate };
         } else {
@@ -148,7 +156,6 @@ class TodoList extends React.Component {
                 handelCheckbox={() => this.handelCheckbox(index)}
                 editTodo={() => this.editTodo(index)}
                 updateTodo={() => this.update(index)}
-                editstate={this.state.isClicked}
                 todoUpdated={this.todoUpdated}
               />
             );
