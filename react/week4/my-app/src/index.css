@@ -12,29 +12,25 @@ code {
     monospace;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#display {
+.container {
+  border: 2px solid black;
+  text-align: center;
   margin: 15px;
   padding: 10px;
 }
+#userName {
+  width: 180px;
+  height: 20px;
+  border: 1px solid blue;
+  font-size: 3vh;
+}
 
-#lists {
-  border: 2px black solid;
-  margin: 10px;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  background-color: #171e08;
-  background-image: linear-gradient(
-    45deg,
-    #e2f3be 0%,
-    #6284ff 33%,
-    #4d706e 66%,
-    #ffffff 100%
-  );
+li {
+  list-style: none;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  margin-top: 5px;
 }
