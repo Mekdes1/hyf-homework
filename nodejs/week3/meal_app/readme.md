@@ -54,11 +54,11 @@ The environment variables are then used in node using `process.env.DB_HOST`, you
 To install run `npm install`
 
 ## 🎈 Usage <a name="usage"></a>
-To run `npm start`
+To run `npm run dev`
 
-The api can now be found on `http://localhost:5000/api/` an example is `http://localhost:5000/api/meals`
+The api can now be found on `http://localhost:3000/api/` an example is `http://localhost:3000/api/meals`
 
-If you go to `http://localhost:5000/` is will throw an error, dont mind this error! You will be working only on the api.
+If you go to `http://localhost:3000/` is will throw an error, dont mind this error! You will be working only on the api.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Mysql](https://www.npmjs.com/package/mysql) - Database

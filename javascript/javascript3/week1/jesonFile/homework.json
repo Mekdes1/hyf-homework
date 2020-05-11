@@ -1,0 +1,43 @@
+{
+  "cars": [
+    {
+      "name": "AC 3000ME",
+      "id": 1,
+      "year": 1994,
+      "assembly": "United Kingdom"
+    },
+
+    {
+      "name": " Alfa Romeo 33 Stradale",
+      "id": 2,
+      "year": 1996,
+      "assembly": "Italy"
+    }
+  ],
+
+  "cats": [
+    {
+      "breed": "Abyssinian",
+      "country": "Ethiopia",
+      "origin": "Natural",
+      "pattern": "Ticked"
+    },
+
+    {
+      "breed": "Norwegian Forest Cat",
+      "country": "Norway",
+      "origin": "Natural",
+      "pattern": "Traditional"
+    }
+  ],
+
+  "phones": [
+    {
+      "name": "iPhone 11",
+      "capacity1": ["64GB", "128GB", "256GB"],
+      "height": "5.94 inches",
+      "width": "2.98 inches",
+      "weight": "194 grams"
+    }
+  ]
+}
