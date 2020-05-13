@@ -1,6 +1,8 @@
 Carrot
 Cabbage
-Potatoes
+Cucumber
 Corn 
 Lettuce
+Pumpkin
+Green pepper
 
