@@ -1,6 +1,8 @@
 corn
 cauliflower
-cabbage
+green cucumber
 carrot
 cucumber
+potatoes
+pumpkin
 
