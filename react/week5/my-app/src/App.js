@@ -75,7 +75,7 @@ class App extends React.Component {
       handelUserSearch: this.handelUserSearch,
     };
     if (!this.state.usersList) {
-      return <div>make sure your input is correct</div>;
+      return;
     }
     const searchedUser = this.state.usersList.map((users) => (
       <div key={users.id} className="container">
